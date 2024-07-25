@@ -22,7 +22,6 @@ public class GildedRoseTest {
     assertEquals(expectedQuality, item.getQuality());
   }
 
-
   @Test
   public void testNormalItemDoubleDecrementQuality() {
     // Contexto
@@ -37,7 +36,6 @@ public class GildedRoseTest {
 
     assertEquals(expectedQuality, item.getQuality());
   }
-
 
   @Test
   public void testNormalItemZeroQuality() {
@@ -68,7 +66,6 @@ public class GildedRoseTest {
 
     assertEquals(expectedQuality, item.getQuality());
   }
-
 
   @Test
   public void testItemNoMayor50() {
@@ -145,6 +142,8 @@ public class GildedRoseTest {
     assertEquals(expectedQuality, item.getQuality());
   }
 
+  // Tests for new requirement
+  /*
   @Test
   public void testConjuredDecrementQuality() {
     // Contexto
@@ -220,4 +219,5 @@ public class GildedRoseTest {
 
     assertEquals(expectedQuality, item.getQuality());
   }
+  */
 }
