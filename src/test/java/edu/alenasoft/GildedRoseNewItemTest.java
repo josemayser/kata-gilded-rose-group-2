@@ -2,8 +2,9 @@ package edu.alenasoft;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class GildedRoseNewItemTest {
 
