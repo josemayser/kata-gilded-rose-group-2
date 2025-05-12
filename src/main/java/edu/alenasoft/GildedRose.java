@@ -26,6 +26,9 @@ public class GildedRose {
 
   public static void updateQuality() {
     for (Item item : items) {
+      if (!item.getName().equals("Sulfuras, Hand of Ragnaros")) {
+        item.setSellIn(item.getSellIn() - 1);
+      }
       ItemCalculatorFactory itemCalculatorFactory = new ItemCalculatorFactory();
       ItemCalculator itemCalculator = itemCalculatorFactory.createItemCalculator(item.getName());
       item.setQuality(itemCalculator.getNextQuality(item));
